@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Audio Genre Prediction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-dark">
+        <a class="navbar-brand" href="#">Music Genre Classification</a>
+    </nav>
+    <div class="container mt-5">
+        <h2>Upload an Audio File</h2>
+        <form id="uploadForm" method="POST" enctype="multipart/form-data">
+            <div class="custom-file mb-3">
+                <input type="file" class="custom-file-input" id="customFile" name="file" accept="audio/*">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+            <div class="mb-3">
+                <audio controls id="audioPlayer">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <hr class="my-4">
+
+        <h1 id="predictedGenreLabel" style="display: none;">Predicted Genre: <span id="predictedGenre"></span></h1>
+    </div>
+
+    <script src="./static/js/scripts.js"></script>
+</body>
+</html>

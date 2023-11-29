@@ -1,0 +1,27 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+}
+.navbar {
+    background-color: #dc3545; /* Dark red navbar */
+}
+.navbar-brand, .navbar-text {
+    color: #fff !important; /* White text */
+}
+h2 {
+    color: #dc3545; /* Dark red header */
+}
+.btn-primary {
+    background-color: #dc3545; /* Dark red button */
+    border-color: #dc3545;
+}
+.btn-primary:hover {
+    background-color: #c82333; /* Slightly darker red on hover */
+    border-color: #bd2130;
+}
+.custom-file-label {
+    color: #dc3545; /* Dark red for file input label */
+}
+#predictedGenreLabel {
+    color: #dc3545; /* Dark red for predicted genre label */
+}
